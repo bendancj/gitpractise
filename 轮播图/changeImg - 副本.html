@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <style type="text/css">
+      .banner {
+        position: relative;
+        overflow: hidden;
+        margin: auto;
+        width: 1000px;
+        height: 300px;
+        border: 1px solid red;
+        text-align: center;
+      }
+
+      li {
+        display: inline-block;
+        list-style: none;
+        width: 15px;
+        height: 15px;
+        background: #333333;
+        line-height: 15px;
+        text-align: center;
+        margin: 0 7px;
+        color: white;
+        font-size: 12px;
+        cursor: pointer;
+      }
+
+      ul {
+        position: absolute;
+        bottom: 10px;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        text-align: center;
+      }
+
+      span {
+        position: absolute;
+        top: 50%;
+        margin-top: -50px;
+        width: 50px;
+        height: 100px;
+        background-color: rgba(0, 0, 130, 0.5);
+        line-height: 100px;
+        text-align: center;
+        font-size: 40px;
+        cursor: pointer;
+        display: none;
+        z-index: 1;
+      }
+
+      .prev {
+        left: 0;
+      }
+
+      .next {
+        right: 0;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="banner">
+      <div class="hot"></div>
+      <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+      </ul>
+      <div><span class="prev">&lt;</span><span class="next">&gt;</span></div>
+    </div>
+  </body>
+</html>
+<script type="text/javascript" src="jquery-1.12.4.js"></script>
+<script type="text/javascript">
+  var imgs = ["yk1.jpg", "yk2.jpg", "yk3.jpg", "yk4.jpg", "yk5.jpg"];
+  var index = 0;
+  var length = imgs.length;
+
+  var time = setInterval(bannerInterval,2000);
+
+  function bannerInterval() {
+      index++;
+      if (index >= length) {
+        index = 0;
+      }
+      $("li:nth-of-type(" + (index + 1) + ")")
+        .css("background", "orange")
+        .siblings()
+        .css("background", "#333333");
+      $("img").attr("src", imgs[index]);
+  }
+  $(".hot").append("<img src='yk1.jpg'>");
+  $(".hot img").css({ width: "1000px", height: "300px" });
+  $(".banner").mouseover(function () {
+      clearInterval(time)
+    $(".prev,.next").stop().show();
+  });
+  $(".banner").mouseout(function () {
+    $(".prev,.next").stop().hide();
+  });
+
+  $("li")[0].style.backgroundColor = "orange";
+  $("li").click(function () {
+    index = $(this).index();
+    $("li:nth-of-type(" + (index + 1) + ")")
+      .css("background", "orange")
+      .siblings()
+      .css("background", "#333333");
+    $("img").attr("src", imgs[index]);
+  });
+  $(".next").click(function () {
+    index++;
+    if (index >= length) {
+      alert("这已经是最后一张图片了！！");
+      index = 4;
+    }
+    $("li:nth-of-type(" + (index + 1) + ")")
+      .css("background", "orange")
+      .siblings()
+      .css("background", "#333333");
+    $("img").attr("src", imgs[index]);
+  });
+  $(".prev").click(function () {
+    index--;
+    if (index < 0) {
+      alert("这已经是第一张图片了！！");
+      index = 0;
+    }
+    $("li:nth-of-type(" + (index + 1) + ")")
+      .css("background", "orange")
+      .siblings()
+      .css("background", "#333333");
+    $("img").attr("src", imgs[index]);
+  });
+</script>
