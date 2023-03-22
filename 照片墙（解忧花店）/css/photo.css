@@ -1,0 +1,145 @@
+*{
+	margin: 0 auto;
+	padding: 0;
+}
+.container{
+	width: 846px;
+}
+.banner{
+	width: 700px;
+	height: 40px;
+	background-image: linear-gradient(to right,#CC99FF, #FFCCFF,#99CCFF);
+	border-radius: 20px;
+	text-align: center;
+	line-height: 40px;	
+	margin: 5px auto;
+	font-family: lemon;
+	font-size: 22px;
+	color: #fff;
+}
+@font-face{
+	font-family: lemon;
+	src:url(../fonts/lemon.ttf);
+}
+.banner:hover{
+	width: 650px;
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+	transition: all 0.4s;
+	font-size: 20px;
+}
+.main{
+	width: 830px;
+	height: 200px;
+	border: 1px solid pink;
+	margin: 10px auto;
+}
+.box{
+	width: 200px;
+	height: 200px;
+	float: left;
+	margin-right: 10px;
+	position: relative;
+	overflow: hidden;
+}
+.box:last-child{
+	margin-right: 0;
+}
+.main .box img{
+	height: 200px;
+	width: 200px;
+}
+.box .hov{
+	width: 200px;
+	height: 0px;
+	background: rgba(230,150,200,0.4);
+	position:absolute;
+	top:60px;
+	left: 0px;
+	text-align:center;
+	color: #fff;
+	overflow: hidden;
+	transform: rotate(60deg);
+	transition: all 0.5s;
+}
+.box:hover .hov{
+	transform: rotate(0deg);
+	height: 90px;
+}
+.box:hover .hov h3{
+	padding-top: 10px;
+}
+.box:after{
+	content: "";
+	display: block;
+	width: 400px;
+	height: 400px;
+	background: rgba(60,100,230,0.2);
+	transform: rotate(45deg) translate(55px,-130px);
+	transition: all 0.5s;
+}
+.box:hover:after{
+	transform: rotate(45deg) translate(-130px,-130px);
+}
+.box:before{
+	content: "";
+	display: block;
+	width: 400px;
+	height: 400px;
+	position:absolute;
+	background: rgba(60,100,230,0.2);
+	transform: rotate(45deg) translate(-500px,0px);
+	transition: all 0.5s;
+}
+.box:hover:before{
+	transform:rotate(45deg) translate(-300px,0px); 
+}
+h3{
+	border-bottom: 1px solid #fff;
+	padding-bottom: 5px;
+}
+p{
+	padding-top: 5px;
+}
+.bottom{
+	font-family: lemon;
+	font-size: 20px;
+	width: 820px;
+	/*height: 100px;*/
+	background-image: linear-gradient(to right,#CC99FF,#99CCFF);
+	line-height: 35px;
+	color: 	#fff;
+	margin: 0 auto;
+	border-radius: 20px;
+	text-indent: 2em;
+	padding:10px;
+}
+.bottom:hover{
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+	transition: all 0.4s;
+}
+.footer{
+	width: 800px;
+	height: 100px;
+	margin: 10px auto;
+	text-align:center;
+	position:relative;
+}
+.footer .bouquet{
+	font-size: 40px;
+	color:  #CC99CC;
+	line-height: 100px;
+	position: absolute;
+	left: 0px;
+	top:10px;
+	margin-left: 200px;
+}
+@font-face{
+	font-family:love you;
+	src:url("../fonts/love.ttf");
+}
+.footer .p1{
+	text-align: center;
+	color: #9999FF;
+	font-family: love you;
+	font-size: 35px;
+}
