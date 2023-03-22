@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>压盖</title>
+	<style type="text/css">
+		ul{
+			list-style: none;
+		}
+		ul li{
+			position: relative;
+			float: left;
+			width: 250px;
+			height: 400px;
+			margin-right: 30px; 
+		}
+		ul li .pic{
+			position: absolute;
+			top:20px;
+			left: -20px;
+		}
+		ul li.hov1:after{
+			content: "喜欢你";
+			background: rgba(0,0,0,0.6);
+			position: absolute;
+			top:0;
+			left: 0;
+			width:  250px;
+			height: 400px;
+			color: #fff;
+			font-size: 30px;
+			text-align:center;
+			line-height:400px;
+			display: none;
+
+		}
+		ul li.hov1:hover:after{
+			display: block;
+
+		}
+		ul li.hov2:after{
+			content: "东宫";
+			background: rgba(0,0,0,0.6);
+			position: absolute;
+			top:0;
+			left: 0;
+			width:  250px;
+			height: 400px;
+			color: #fff;
+			font-size: 30px;
+			text-align:center;
+			line-height:400px;
+			display: none;
+
+		}
+		ul li.hov2:hover:after{
+			display: block;
+
+		}
+		ul li.hov3:after{
+			content: "千与千寻";
+			background: rgba(0,0,0,0.6);
+			position: absolute;
+			top:0;
+			left: 0;
+			width:  250px;
+			height: 400px;
+			color: #fff;
+			font-size: 30px;
+			text-align:center;
+			line-height:400px;
+			display: none;
+
+		}
+		ul li.hov3:hover:after{
+			display: block;
+
+		}
+	</style>
+</head>
+<body>
+	<ul>
+		<li class="hov1">
+			<img src="喜欢你.jpg" alt="" width="250px" height="400px">
+			<div class="pic"><img src="imax.jpg" width="80px" height="60px"></div>
+		</li>
+
+		<li class="hov2">
+			<img src="东宫.jpg" alt="" width="250px" height="400px">
+			<div class="pic"><img src="imax.jpg" width="80px" height="60px"></div>
+		</li>
+
+		<li class="hov3">
+			<img src="千与千寻.jpg" alt="" width="250px" height="400px">
+			<div class="pic"><img src="imax.jpg" width="80px" height="60px"></div>
+		</li>
+		<li class="hov4">
+			<img src="动漫.jpg" alt="" width="250px" height="400px">
+			<div class="pic"><img src="imax.jpg" width="80px" height="60px"></div>
+		</li>
+	</ul>
+</body>
+</html>
