@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.container{
+                position: absolute;
+                top:12%;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                margin: auto;
+        }
+        .box_block{
+                position: relative;
+                width: 300px;
+                height: 300px;
+                margin: 0 auto;
+                animation: Positive_rotation 4s linear infinite;
+        }
+        @keyframes Positive_rotation{
+                from{transform: rotate(0deg);}
+                to{transform: rotate(360deg);}
+            }
+        .div1{
+                width: 0;
+                height: 0;
+                border:75px solid #FFCCCC;
+                border-left-color: transparent;/*隐藏*/
+                border-bottom-color: #3399CC;
+                float: left;
+        }
+        .div2{
+                width: 0;
+                height: 0;
+                border: 75px solid #CCCCFF;
+                border-top-color: transparent;
+                border-left-color:#FF9999;
+                float: left;
+        }
+        .div3{
+                width: 0;
+                height: 0;
+                border:75px solid skyblue;
+                border-bottom-color: transparent;
+                border-right-color: #FF9933;
+                float: left;
+        }
+        .div4{
+                width: 0;
+                height: 0;
+                border:75px solid #FFCC33;
+                border-right-color: transparent;
+                border-top-color: #9999FF;
+                float: left;
+        }
+        .stick{
+                width: 14px;
+                height: 400px;
+                background: #9999FF;
+                z-index: -1;
+                left: 0;
+                top:86px;
+                bottom:0;
+                right: 0;
+                margin: auto;
+                position: absolute;
+        }
+	</style>
+</head>
+<body>
+	<div class="container">
+            <div class="box_block">
+                <div class="div1"></div>
+                <div class="div2"></div>    
+                <div class="div3"></div>
+                <div class="div4"></div>
+            </div>
+            <div class="stick"></div>            
+    </div>
+</body>
+</html>
