@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0
+}
+#demo {
+        display: block;
+        width: 400px;
+        height: 400px;
+        margin: 0 200px;
+        position: relative;
+        border: 1px solid #ccc;
+        }
+#small-box {
+        position: relative;
+        z-index: 1;
+        }
+#float-box {
+        display: none;
+        width: 160px;
+        height: 120px;
+        position: absolute;
+        background: pink;
+        border: 1px solid #ccc;
+        opacity: 0.5;    
+}
+#big-box {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 500px;
+        width: 400px;
+        height: 400px;
+        overflow: hidden;
+        border: 1px solid #ccc;
+        z-index: 10;
+}
+#big-box img {
+        position: absolute;
+        z-index: 5
+}
