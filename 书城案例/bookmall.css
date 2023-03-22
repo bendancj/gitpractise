@@ -1,0 +1,74 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+.top{
+	width: 1040px;
+	height: 150px;
+	margin: 0 auto;
+}
+.top img{
+	width: 1040px;
+	height: 150px;
+	margin: 0 auto;
+}
+.all{
+	width: 1040px;
+	height: 200px;
+	margin:20px auto 20px;
+}
+.all-two{
+	width: 1040px;
+	height: 200px;
+	margin:0 auto;
+}
+.div1,.div2{
+	width: 200px;
+	height: 200px;
+	float: left;
+	margin-right: 10px;
+	box-shadow: #CCCCFF 0px 5px 5px;
+	transition: all 0.5s;
+}
+.div1:hover,.div2:hover{
+	transform: translateY(-10px);
+}
+.div1{
+	background-image: linear-gradient(to bottom,#6699FF,#FFCCFF)
+}
+@font-face{
+	font-family: hello;
+	src:url("hello.ttf");
+}
+.div1 p{
+	color: #666699;
+	font-family: hello;
+	font-size: 25px;
+	text-align: center;
+	line-height: 200px;
+}
+.div2{
+	overflow: hidden;
+}
+.div2 .pic img{
+	width: 200px;
+	height: 200px;
+}
+.div2:last-child{
+	margin-right: 0;
+}
+.div2 .h{
+	width: 200px;
+	height: 40px;
+	background:pink;
+	transition: all 0.5s;
+	text-align: center;
+	line-height: 40px;
+}
+.div2:hover .h{
+	transform: translateY(-40px);
+}
+.div2 .h i{
+	color: red;
+
+}
