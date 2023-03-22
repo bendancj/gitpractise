@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>响应式</title>
+    <!-- swiper -->
+    <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/> -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- 头部导航栏 -->
+    <header>
+        <div id="menu-bar" class="fa fa-bars"></div>
+        <a href="#" class="logo"> <span>旅</span>行</a>
+        <nav class="navbar">
+            <a href="#home">首页</a>
+            <a href="#packages">地点</a>
+            <a href="#services">服务</a>
+            <a href="#gallery">预览</a>
+            <a href="#review">名人</a>
+            <a href="#contact">联系我们</a>
+        </nav>
+
+        <div class="icons">
+            <i class="fas fa-search" id="search-btn"></i>
+            <i class="fas fa-user" id="login-btn"></i>
+        </div>
+
+        <form action="" class="search-bar-container">
+            <input type="search" id="search-bar" placeholder="搜索...">
+            <label for="search-bar" class="fas fa-search"></label>
+        </form>
+    </header>
+    <!-- 头部导航栏 -->
+
+    <!-- 登录板块-->
+    <div class="login-form-container">
+        <i class="fas fa-times" id="form-close"></i>
+        <form action="">
+            <h3>用户登录</h3>
+            <input type="email" class="box" placeholder="输入账号">
+            <input type="password" class="box" placeholder="输入密码">
+            <input type="submit" value="登录" class="btn">
+            <div class="login-bottom">
+                <div class="btn-remember">
+                    <input type="checkbox" id="remember">
+                    <label for="remember">记住密码</label>
+                </div>
+                <p>忘记密码</p>
+                <p>注册账号</p>
+                        
+            </div>
+            
+        </form>
+    </div>
+    <!-- 登录板块-->
+
+    <!-- 首页板块 -->
+    <section class="home" id="home">
+        <div class="content">
+            <h3>生活需要一双发现美的眼睛</h3>
+        </div>
+
+        <div class="controls">
+            <span class="vid-btn active" data-src="video/vid-1.mp4"></span>
+            <span class="vid-btn" data-src="video/vid-2.mp4"></span>
+            <span class="vid-btn" data-src="video/vid-3.mp4"></span>
+            <span class="vid-btn" data-src="video/vid-4.mp4"></span>
+            <span class="vid-btn" data-src="video/vid-5.mp4"></span>
+            
+        </div>
+
+        <div class="video-container">
+            <video src="video/vid-1.mp4" id="video-slider" loop autoplay muted></video>
+        </div>
+    </section>
+    <!-- 首页板块 -->
+
+    <!-- 地点板块 -->
+    <section class="packages" id="packages">
+        <h1 class="heading">
+            <span>地</span>
+            <span class="space"></span>
+            <span>点</span>
+        </h1>
+        <div class="box-container">
+            <div class="box">
+                <img src="images/大理.PNG" alt="">
+                <div class="content">
+                    <h3><i class="fas fa-map-marker-alt"></i>云南大理</h3>
+                    <p>大理白族自治州，首府驻大理市，是云南的16个地级行政区之一</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                     
+                    <a href="#" class="btn"> 去这里</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/昆明.PNG" alt="">
+                <div class="content">
+                    <h3><i class="fas fa-map-marker-alt"></i>云南昆明</h3>
+                    <p>昆明，别称春城，是云南省辖地级市，是国务院批复确定的中国西部地区重要的中心城市之一。</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                     
+                    <a href="#" class="btn"> 去这里</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/西双版纳.PNG" alt="">
+                <div class="content">
+                    <h3><i class="fas fa-map-marker-alt"></i>云南西双版纳</h3>
+                    <p>西双版纳傣族自治州，是云南省的8个自治州之一，首府景洪市</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                     
+                    <a href="#" class="btn"> 去这里</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/p-4.jpg" alt="">
+                <div class="content">
+                    <h3><i class="fas fa-map-marker-alt"></i>巴黎</h3>
+                    <p>巴黎（Paris），是法兰西共和国的首都和最大城市，也是法国的政治、经济、文化和商业中心，世界五个国际大都市之一</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                      
+                    <a href="#" class="btn"> 去这里</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/马尔代夫.PNG" alt="">
+                <div class="content">
+                    <h3><i class="fas fa-map-marker-alt"></i>马尔代夫</h3>
+                    <p>马尔代夫是印度洋上的一座岛国,北部与印度、斯里兰卡邻近。全国由一千多座珊瑚岛组成,像是散落在印度洋上的“珍珠”,呈南北向延伸</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                     
+                    <a href="#" class="btn"> 去这里</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/青岛.PNG" alt="">
+                <div class="content">
+                    <h3><i class="fas fa-map-marker-alt"></i>青岛</h3>
+                    <p>青岛，别称岛城、琴岛、胶澳，是中国山东省辖地级市、副省级市、计划单列市、特大城市，是国务院批复确定的中国沿海重要中心城市和滨海度假旅游城市</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                     
+                    <a href="#" class="btn"> 去这里</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 地点板块 -->
+
+    <!-- 服务板块 -->
+    <section class="services" id="services">
+        <h1 class="heading">
+            <span>服</span>
+            <span class="space"></span>
+            <span class="space"></span>
+            <span>务</span>
+        </h1>
+        <div class="box-container">
+            <div class="box">
+                <i class="fas fa-hotel"></i>
+                <h3>酒店</h3>
+            </div>
+            <div class="box">
+                <i class="fas fa-utensils"></i>
+                <h3>饮食</h3>
+            </div>
+            <div class="box">
+                <i class="fas fa-bullhorn"></i>
+                <h3>导游</h3>
+            </div>
+            <div class="box">
+                <i class="fas fa-globe-asia"></i>
+                <h3>环游</h3>
+            </div>
+            <div class="box">
+                <i class="fas fa-plane"></i>
+                <h3>交通工具</h3>
+            </div>
+            <div class="box">
+                <i class="fas fa-hiking"></i>
+                <h3>冒险</h3>
+            </div>
+        </div>
+    </section>
+    <!-- 服务板块 -->
+
+    <!--预览板块 -->
+    <section class="gallery" id="gallery">
+        <h1 class="heading">
+            <span>预</span>
+            <span class="space"> </span>
+            <span>览</span>
+        </h1>
+        <div class="box-container">
+            <div class="box">
+                <img src="images/g-1.jpg" alt="">
+            </div>
+            <div class="box">
+                <img src="images/g-2.jpg" alt="">
+            </div>
+            <div class="box">
+                <img src="images/g-3.jpg" alt="">
+            </div>
+            <div class="box">
+                <img src="images/g-4.jpg" alt="">
+            </div>
+            <div class="box">
+                <img src="images/g-5.jpg" alt="">
+            </div>
+            <div class="box">
+                <img src="images/g-6.jpg" alt="">
+            </div>
+            <div class="box">
+                <img src="images/g-7.jpg" alt="">
+            </div>
+            <div class="box">
+                <img src="images/g-8.jpg" alt="">
+            </div>
+            <div class="box">
+                <img src="images/g-9.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <!--预览板块 -->
+
+    <!-- 名人板块 -->
+    <section class="review" id="review">
+        <h1 class="heading">
+            <span>名</span>
+            <span class="space"> </span>
+            <span>人</span>
+        </h1>
+        <div class="swiper review-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="images/头像1.jpg" alt="">
+                        <h3> 人物1</h3>
+                        
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+                </div>   
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="images/头像2.jpg" alt="">
+                        <h3> 人物2</h3>
+                        
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+                </div>  
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="images/头像3.jpg" alt="">
+                        <h3> 人物3</h3>
+                        
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+                </div>  
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="images/头像4.jpg" alt="">
+                        <h3> 人物4</h3>
+                    
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+                </div>   
+            </div>
+        </div>
+        
+        </div>
+    </section>
+    <!-- 名人板块 -->
+
+    <!-- 页面底部 -->
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>快速返回</h3>
+                <a href="#">首页</a>
+                <a href="#">地点</a>
+                <a href="#">服务</a>
+                <a href="#">预览</a>
+                <a href="#">相关人员</a>
+                <a href="#">联系我们</a>
+            </div>
+        </div>
+        <h1 class="credit">Copy by
+            <span>mr.web designer</span>
+        </h1>
+    </section>
+    <!-- 页面底部 -->
+
+
+
+
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+<!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
+
+<script src="js/script.js"></script>
+</body>
+</html>
